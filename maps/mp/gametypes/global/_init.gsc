@@ -15,7 +15,8 @@ InitSystems()
     maps\mp\gametypes\global\cvar_system::Init();	// Define g_gametpe, fs_mode, ... cvars
 	maps\mp\gametypes\global\pam::Init();		// Define pam_mode cvar
 	maps\mp\gametypes\global\rules::Init();		// Register rule cvar values
-	
+	maps\mp\gametypes\global\cvars::Init();		// Define game and shared cvars
+    
 }
 
 resetFirstInit()
