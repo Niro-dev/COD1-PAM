@@ -17,6 +17,11 @@ InitSystems()
 	maps\mp\gametypes\global\rules::Init();		// Register rule cvar values
 	maps\mp\gametypes\global\cvars::Init();		// Define game and shared cvars
     
+    // Precache (only once)
+	if (game["firstInit"])
+	{
+		maps\mp\gametypes\global\precache::Init();
+	}
 }
 
 resetFirstInit()
