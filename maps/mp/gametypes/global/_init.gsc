@@ -16,7 +16,7 @@ InitSystems()
 	maps\mp\gametypes\global\pam::Init();		// Define pam_mode cvar
 	maps\mp\gametypes\global\rules::Init();		// Register rule cvar values
 	maps\mp\gametypes\global\cvars::Init();		// Define game and shared cvars
-    
+
     // Precache (only once)
 	if (game["firstInit"])
 	{
@@ -28,4 +28,10 @@ resetFirstInit()
 {
 	wait 0;
 	game["firstInit"] = false;
+}
+
+// This function is called at the end of <gametype>.gsc::main() function
+InitModules()
+{
+    
 }
