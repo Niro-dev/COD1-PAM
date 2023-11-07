@@ -33,5 +33,5 @@ resetFirstInit()
 // This function is called at the end of <gametype>.gsc::main() function
 InitModules()
 {
-    
+    thread maps\mp\gametypes\_pam::init();
 }
