@@ -14,6 +14,7 @@ InitSystems()
     maps\mp\gametypes\global\events::Init();	// Init events so we can use them
     maps\mp\gametypes\global\cvar_system::Init();	// Define g_gametpe, fs_mode, ... cvars
 	maps\mp\gametypes\global\pam::Init();		// Define pam_mode cvar
+	maps\mp\gametypes\global\rules::Init();		// Register rule cvar values
 	
 }
 
