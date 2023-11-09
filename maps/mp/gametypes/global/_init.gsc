@@ -35,4 +35,5 @@ InitModules()
 {
     thread maps\mp\gametypes\_pam::init();
     thread maps\mp\gametypes\_log::init();
+    thread maps\mp\gametypes\_server_restart::init();
 }
