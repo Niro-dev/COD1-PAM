@@ -34,8 +34,10 @@ resetFirstInit()
 InitModules()
 {
     thread maps\mp\gametypes\_pam::init();
-    
+
     thread maps\mp\gametypes\_bots::Init();			// must be called to indentify bots as first
     thread maps\mp\gametypes\_log::init();
     thread maps\mp\gametypes\_server_restart::init();
+
+    thread maps\mp\gametypes\_weapons::init();
 }
