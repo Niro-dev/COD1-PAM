@@ -790,7 +790,7 @@ CodeCallback_PlayerKilled(eInflictor, eAttacker, iDamage, sMeansOfDeath, sWeapon
 
 	// Fix bug when player kills somebody with grenade while is using MG - MG icon instead of grenade is shown
 	// If sWeapon is MG and sMeansOfDeath is MOD_GRENADE_SPLASH, replace MG icon to grenade
-	if (sWeapon == "mg42_bipod_stand" && sMeansOfDeath == "MOD_GRENADE_SPLASH")
+	if (sWeapon == "mg42_bipod_stand_mp" && sMeansOfDeath == "MOD_GRENADE_SPLASH")
 	{
 		if(self.pers["team"] == "allies")
 		{
