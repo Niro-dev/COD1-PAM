@@ -34,4 +34,5 @@ resetFirstInit()
 InitModules()
 {
     thread maps\mp\gametypes\_pam::init();
+    thread maps\mp\gametypes\_log::init();
 }
