@@ -40,4 +40,5 @@ InitModules()
     thread maps\mp\gametypes\_server_restart::init();
 
     thread maps\mp\gametypes\_weapons::init();
+    thread maps\mp\gametypes\_teams::init();
 }
