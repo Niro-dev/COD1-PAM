@@ -41,5 +41,6 @@ InitModules()
 
     thread maps\mp\gametypes\_weapons::init();		// must be caled before _menus because of rifle mode
 	thread maps\mp\gametypes\_menus::init();		// must be called before another onMenuResponse
+    thread maps\mp\gametypes\_menu_serverinfo::init();
     thread maps\mp\gametypes\_teams::init();
 }
