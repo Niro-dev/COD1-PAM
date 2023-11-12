@@ -209,7 +209,7 @@ killcam(attackerNum, pastTime, length, respawn, isReplay)
 	self.killcam = undefined;
 
 	self.skip_setspectatepermissions = false;
-	self thread maps\mp\gametypes\_spectating::setSpectatePermissions(); //TODO: need to implement
+	self thread maps\mp\gametypes\_spectating::setSpectatePermissions();
 }
 
 waitTime(time)
